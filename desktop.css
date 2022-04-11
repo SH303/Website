@@ -1,0 +1,65 @@
+body 
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+     "nav"
+     "main"
+     "footer";
+}
+
+header 
+{
+    grid-area: header;
+}
+
+nav 
+{
+	text-align: center;
+	padding: 30px;
+	grid-area: nav;
+}
+
+nav li 
+{
+	display: inline-block;
+}	
+
+nav li a 
+{
+	padding: 10px 30px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav li a:hover 
+{
+	background: #FFFFFF;
+	color: #0000FF;
+}
+	   
+main 
+{
+    grid-area: main;
+}
+
+main h1.indexwelcome1
+{
+	padding-left: 200px;
+	padding-top: 50px;
+}
+
+main p.indexwelcome2
+{
+	padding-left: 200px;
+	padding-top: 50px;
+	font-size: 25px;
+}
+
+footer 
+{
+	position: fixed;
+	bottom: 0px;
+    grid-area: footer;
+}
