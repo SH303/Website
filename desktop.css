@@ -1,4 +1,4 @@
-body 
+.index-grid
 {
     display: grid;
     grid-template-columns: auto;
@@ -34,14 +34,14 @@ nav li
 nav li a 
 {
 	padding: 10px 30px;
-	color: #FFFFFF;
+	color: white;
 	text-decoration: none;
 }
 
 nav li a:hover 
 {
-	background: #FFFFFF;
-	color: #0000FF;
+	background: white;
+	color: red;
 }
 	   
 main 
