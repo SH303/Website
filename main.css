@@ -1,7 +1,11 @@
-* {
+* 
+{
 	margin: 0;
 	padding: 0;
 }
+
+/*the background gif is from an external website
+Reference: https://gfycat.com/finishedgreenbarracuda*/
 
 body 
 {
@@ -22,10 +26,28 @@ nav
     grid-area: nav;
 }
 
+article 
+{
+	color: white;
+    grid-area: article;
+}
+
 main 
 {
 	color: white;
     grid-area: main;
+}
+
+aside
+{
+	color: white;
+    grid-area: aside;
+}
+
+section
+{
+	color: white;
+    grid-area: section;
 }
 
 footer 

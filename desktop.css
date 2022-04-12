@@ -9,12 +9,23 @@
      "footer";
 }
 
+.portfolio-grid
+{
+   display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"nav nav nav"
+	"article aside section"
+	"footer footer footer";
+}
+
 #clicked .off
 {
 	display: none;
 }
 
-header 
+header
 {
     grid-area: header;
 }
@@ -44,9 +55,24 @@ nav li a:hover
 	color: red;
 }
 	   
+article 
+{
+    grid-area: article;
+}
+
 main 
 {
     grid-area: main;
+}
+
+aside
+{
+    grid-area: aside;
+}
+
+section
+{
+    grid-area: section;
 }
 
 main h1.indexwelcome1
