@@ -70,3 +70,23 @@ nav li a
 	color: white;
 	text-decoration: none;
 }
+
+main h1.indexwelcome1
+{
+	padding-left: 100px;
+	padding-top: 200px;
+}
+
+main p.indexwelcome2
+{
+	padding-left: 100px;
+	padding-top: 50px;
+	font-size: 20px;
+}
+
+footer 
+{
+	position: fixed;
+	bottom: 0px;
+    grid-area: footer;
+}
