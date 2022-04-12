@@ -9,6 +9,11 @@ body
      "footer";
 }
 
+#clicked .off
+{
+	display: none;
+}
+
 header 
 {
     grid-area: header;
