@@ -1,22 +1,33 @@
 .index-grid
 {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
-    grid-template-areas: "header"
-     "nav"
-     "main"
-     "footer";
+    grid-template-areas: "header header header"
+     "nav nav nav"
+     "main main main"
+     "footer footer footer";
 }
 
 .portfolio-grid
 {
    display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
 	grid-template-areas: "header header header"
 	"nav nav nav"
 	"article aside section"
+	"footer footer footer";
+}
+
+.contact-grid
+{
+   display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"nav nav nav"
+	"main main main"
 	"footer footer footer";
 }
 
@@ -75,17 +86,67 @@ section
     grid-area: section;
 }
 
-main h1.indexwelcome1
+.indexwelcome1
 {
 	padding-left: 200px;
 	padding-top: 50px;
 }
 
-main p.indexwelcome2
+.indexwelcome2
 {
 	padding-left: 200px;
 	padding-top: 50px;
 	font-size: 25px;
+}
+
+.contact1
+{
+	padding-left: 50px;
+}
+
+.contact2
+{
+	padding-left: 70px;
+}
+
+.contact3
+{
+	padding-left: 300px;
+}
+
+input 
+{
+    border: 2px solid #ddd;
+    color: #fff;
+    background-color: #555;
+}
+
+input::placeholder 
+{
+    color: #ccc;
+}
+
+select
+{
+    border: 2px solid #ddd;
+    color: #ccc;
+    background-color: #555;
+}
+
+form 
+{
+	padding-top: 20px;
+	padding-left: 50px;
+    display: grid;
+    width: 400px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 0.5em;
+}
+
+.submit 
+{
+    grid-column: 2;
 }
 
 footer 

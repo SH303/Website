@@ -82,6 +82,17 @@ header
 	"footer";
 }
 
+.contact-grid
+{
+   display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+	grid-template-areas: "header"
+	"nav"
+	"main"
+	"footer";
+}
+
 nav 
 {
     display: none;
@@ -115,17 +126,68 @@ section
     grid-area: section;
 }
 
-main h1.indexwelcome1
+.indexwelcome1
 {
 	padding-left: 100px;
 	padding-top: 200px;
 }
 
-main p.indexwelcome2
+.indexwelcome2
 {
 	padding-left: 100px;
 	padding-top: 50px;
 	font-size: 20px;
+}
+
+.contact1
+{
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.contact2
+{
+	padding-left: 50px;
+}
+
+.contact3
+{
+	padding-left: 150px;
+}
+
+input
+{
+    border: 2px solid #ddd;
+    color: #fff;
+    background-color: #555;
+}
+
+input::placeholder 
+{
+    color: #ccc;
+}
+
+select
+{
+    border: 2px solid #ddd;
+    color: #ccc;
+    background-color: #555;
+}
+
+form 
+{
+	padding-top: 20px;
+	padding-left: 50px;
+    display: grid;
+    width: 400px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 0.5em;
+}
+
+.submit 
+{
+    grid-column: 2;
 }
 
 footer 
