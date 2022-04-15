@@ -16,6 +16,34 @@
     border-top: 0.2em solid white;
 }
 
+.animation
+{
+	width: 3em;
+    height: 3em;
+    background-color: red;
+    border-radius: 50%;
+    animation: move 7s infinite ease-in;
+}
+   
+	
+@keyframes move 
+{
+0% 
+{
+    transform: translate(500%, -75%);
+}
+
+50% 
+{
+	transform: translate(1000%, -75%);
+}
+
+100% 
+{
+    transform: translate(500%, -75%);
+}
+}
+
 /*
 When the target isn't set, hide the "off"
 button and show the "on" button
@@ -44,6 +72,8 @@ button and show the "off" button
 #clicked:target .off 
 {
 	display: block;
+	color: white;
+	font-size: 20px;
 }
 
 #clicked:target nav 
