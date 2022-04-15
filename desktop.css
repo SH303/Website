@@ -42,6 +42,17 @@
 	"article aside section"
 	"footer footer footer";
 }
+
+.sitereport-grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"nav nav nav"
+	"main main main"
+	"footer footer footer";
+}
    
 .animation
 {
@@ -71,14 +82,11 @@
 }
 }
 		
-#clicked .off
+#clicked .off 
 {
 	display: none;
-}
-
-header
-{
-    grid-area: header;
+	color: white;
+	font-size: 20px;
 }
 
 nav 
@@ -91,7 +99,7 @@ nav
 nav li 
 {
 	display: inline-block;
-}	
+}		
 
 nav li a 
 {
@@ -104,33 +112,6 @@ nav li a:hover
 {
 	background: white;
 	color: red;
-}
-	   
-article 
-{
-    grid-area: article;
-}
-
-main 
-{
-    grid-area: main;
-}
-
-aside
-{
-    grid-area: aside;
-}
-
-section
-{
-    grid-area: section;
-}
-
-footer 
-{
-	position: fixed;
-	bottom: 0px;
-    grid-area: footer;
 }
 
 .indexwelcome1
@@ -159,44 +140,4 @@ footer
 .contact3
 {
 	padding-left: 300px;
-}
-
-input 
-{
-    border: 2px solid #ddd;
-    color: #fff;
-    background-color: #555;
-}
-
-input::placeholder 
-{
-    color: #ccc;
-}
-
-select
-{
-    border: 2px solid #ddd;
-    color: #ccc;
-    background-color: #555;
-}
-
-form 
-{
-	padding-top: 20px;
-	padding-left: 50px;
-    display: grid;
-    width: 400px;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    grid-gap: 0.5em;
-}
-
-.submit 
-{
-    grid-column: 2;
-}
-
-.blog-paragraph
-{
-	word-break: break-word;
 }
