@@ -20,7 +20,7 @@ header
     grid-area: header;
 }
 
-nav 
+nav
 {
 	color: white;
     grid-area: nav;
@@ -53,5 +53,47 @@ section
 footer 
 {
 	color: white;
+	position: fixed;
+	bottom: 0px;
     grid-area: footer;
+}
+
+input 
+{
+    border: 2px solid #ddd;
+    color: #fff;
+    background-color: #555;
+}
+
+input::placeholder 
+{
+    color: #ccc;
+}
+
+select
+{
+    border: 2px solid #ddd;
+    color: #ccc;
+    background-color: #555;
+}
+
+form 
+{
+	padding-top: 20px;
+	padding-left: 50px;
+    display: grid;
+    width: 400px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 0.5em;
+}
+
+.submit 
+{
+    grid-column: 2;
+}
+
+.blog-paragraph
+{
+	word-break: break-word;
 }
